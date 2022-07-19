@@ -1,0 +1,91 @@
+.footerWrapp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  background-color: #64ABF9;
+  color: white;
+}
+
+.logoWrapp {
+  width: 249px;
+  height: 59px;
+}
+
+.footerWrapp>div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  max-width: 1300px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footerWrapp>div>:last-child {
+  margin-right: 145px;
+  margin-left: 150px;
+}
+
+.footerWrapp>p {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 90px;
+  line-height: 175%;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.footerSocNetImage {
+  display: flex;
+  margin-top: 18px;
+}
+
+.footerSocNetImage img:not(:first-child) {
+  height: 25px;
+  margin-left: 32px;
+}
+
+.contacts{
+  margin-left: 120px;
+}
+
+.contacts div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.contacts div::before {
+  content: url("../../../assets/socialNetworks/viber.svg");
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -30px;
+}
+
+@media(max-width: 1100px) {
+  .footerWrapp>div {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    font-size: 16px;
+  }
+
+  .contacts {
+    margin-top: 50px;
+    margin-left: 22px;
+  }
+
+  .footerWrapp>p {
+    font-size: 14px;
+    margin: 80px 40px 100px 40px;
+  }
+
+  .footerWrapp>div>:last-child {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+}

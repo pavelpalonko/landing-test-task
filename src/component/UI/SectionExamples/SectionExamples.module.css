@@ -1,0 +1,87 @@
+.secExamples {
+  height: max-content;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DAECFF;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.secExamples h2 {
+  margin: 120px 20px 0 20px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.storeBlockWrapp {
+  max-width: 1160px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px 0px 120px 0px;
+  transition: 0.5s;
+}
+
+.slideButtonWrapp {
+  display: none;
+}
+
+/* decoration */
+
+.sphere {
+  position: absolute;
+  top: calc(100% - 400px);
+  left: calc(100% - 250px);
+}
+
+.wave {
+  position: absolute;
+  bottom: calc(100% - 500px);
+  right: calc(100% - 250px);
+}
+
+@media(max-width: 1600px) {
+  .wave {
+    display: none;
+  }
+
+  .sphere {
+    display: none;
+  }
+}
+
+@media(max-width: 780px) {
+  .storeBlockWrapp {
+    width: 725px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .storeContainer {
+    width: 370px;
+    overflow: hidden;
+  }
+
+  .slideButtonWrapp {
+    display: block;
+  }
+}
+
+@media(max-width: 480px) {
+  .secExamples h2 {
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 23px;
+  }
+
+  .storeBlockWrapp {
+    margin-top: 10px;
+  }
+
+  .btnWrapp {
+    width: 227px;
+  }
+}

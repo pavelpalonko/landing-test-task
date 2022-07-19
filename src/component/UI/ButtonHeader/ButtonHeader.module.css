@@ -1,0 +1,22 @@
+.myBtnHead {
+  width: 170px;
+  height: 38px;
+  background: #75E169;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.myBtnHead:hover {
+  border: 2px solid #ffffff;
+}
+
+.myBtnHead:active {
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  color: #67AEFC;
+}

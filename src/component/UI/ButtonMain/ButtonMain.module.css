@@ -1,0 +1,28 @@
+.myBtnMain {
+  width: 270px;
+  height: 68px;
+  background: #75E169;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.myBtnMain:hover {
+  border: 2px solid #67AEFC;
+}
+
+.myBtnMain:active {
+  background: #67AEFC;
+  color: #FFFFFF;
+}
+
+@media(max-width: 480px) {
+  .myBtnMain  {
+    width: 100%;
+    border-radius: 10px;
+  }
+}

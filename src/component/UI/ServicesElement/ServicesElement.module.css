@@ -1,0 +1,128 @@
+.optionServicesWrapp {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.optionServices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+  height: 100%;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.optionServices>div {
+  display: flex;
+}
+
+.optionServices p {
+  display: flex;
+}
+
+.ball {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-left: 44px;
+  margin-right: 28px;
+  background-color: #75E169;
+}
+
+
+.openBtn {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  margin-right: 42px;
+  cursor: pointer;
+}
+
+
+/* decription */
+
+.optionServicesDesc {
+  width: 100%;
+  margin-top: 10px;
+  display: none;
+  background-color: white;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.optionServicesDesc h3 {
+  display: flex;
+}
+
+.optionServicesDesc div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.ballDecs {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-left: 44px;
+  margin-right: 28px;
+  background-color: #67AEFC;
+}
+
+.optionServicesDesc p {
+  border-left: 1px solid black;
+  padding: 0 70px 0 40px;
+  margin-left: 55px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 175%;
+}
+
+.closeBtnDesc {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-135deg);
+  margin-right: 42px;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .optionServicesDesc p {
+    margin-left: 32px;
+  }
+
+  .ball {
+    width: 15px;
+    height: 15px;
+    margin: auto 17px auto 24px;
+  }
+
+  .ballDecs {
+    width: 15px;
+    height: 15px;
+    margin-left: 24px;
+    margin-right: 17px;
+  }
+
+  .optionServicesDesc h3 {
+    padding-left: 18px;
+  }
+}

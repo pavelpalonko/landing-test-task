@@ -1,0 +1,173 @@
+.secServices {
+  width: 100%;
+  /* min-height: 700px; */
+  height: max-content;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DAECFF;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.secServices > div {
+  max-width: 1169px;
+  width: 100%;
+}
+
+.secServices h2 {
+  margin-top: 120px;
+  margin-bottom: 75px;
+  font-weight: 800;
+  font-size: 32px;
+  text-align:  center;
+  padding: 0 20px 0 20px;
+}
+
+/* decoration */
+
+.secServices img {
+  position: absolute;
+  top: calc(100% - 300px);
+  left: calc(100% - 250px);
+}
+
+@media(max-width: 1650px) {
+  .secServices img {
+    display: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .secServices {
+    padding-bottom: 30px;
+  }
+
+  .secServices h2 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 23px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.optionService {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1169px;
+  height: 60px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.optionService p {
+  display: flex;
+}
+
+.optionService p::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-left: 44px;
+  margin-right: 28px;
+  background-color: aquamarine;
+}
+
+.openBtn {
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  margin-right: 42px;
+  cursor: pointer;
+}
+
+
+/* decription */
+
+.optionServiceDesc {
+  width: 1169px;
+  margin-top: 10px;
+  /* height: max-content; */
+  /* height: 0; */
+  /* opacity: 0; */
+  display: none;
+  background-color: white;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.optionServiceDesc h3 {
+  display: flex;
+}
+
+.optionServiceDesc div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.optionServiceDesc h3::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  margin-left: 44px;
+  margin-right: 28px;
+  background-color: aquamarine;
+}
+
+
+.optionServiceDesc p {
+  border-left: 1px solid black;
+  padding: 0 70px 0 40px;
+  margin-left: 55px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+.closeBtnDesc {
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-135deg);
+  margin-right: 42px;
+  cursor: pointer;
+}

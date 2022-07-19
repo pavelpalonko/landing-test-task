@@ -1,0 +1,54 @@
+.btnWrapp {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnR, .btnL {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btnL div, .btnR div {
+  width: 18px;
+  height: 18px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+ 
+}
+
+.btnL div {
+  transform: rotate(-45deg);
+  margin-right: 10px;
+}
+
+.btnR div {
+  transform: rotate(-225deg);
+  margin-left: 10px;
+}
+
+.btnL:active, .btnR:active {
+ background-color: #67AEFC;
+}
+
+.btnL div:active, .btnR div:active {
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+}
+
+@media(max-width: 480px) {
+  .btnWrapp {
+    width: 227px;
+  }
+}

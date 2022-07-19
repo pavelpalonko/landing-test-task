@@ -1,0 +1,147 @@
+.secPreview {
+  position: relative;
+  /* height: 670px; */
+  max-width: 100%;
+}
+
+.secPreview h1 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 125%;
+  color: #484848;
+}
+
+.titlePreviewWrapp {
+  max-width: 570px;
+  margin-left: 375px;
+  margin-top: 171px;
+  margin-bottom: 180px;
+}
+
+.titlePreviewWrapp p {
+  max-width: 432px;
+  line-height: 140%;
+  margin-top: 20px;
+  margin-bottom: 58px;
+}
+
+/* decoration */
+
+.basketGroup {
+  position: absolute;
+  bottom: calc(100% - 550px);
+  left: calc(100% - 900px);
+}
+
+.waveGroup {
+  position: absolute;
+  top: calc(100% - 40px);
+}
+
+.sphere {
+  position: absolute;
+  bottom: calc(100% - -20px);
+  right: calc(100% - 300px);
+}
+
+.basketGroupAdaptive {
+  display: none;
+}
+
+.elipse {
+  display: none;
+}
+
+@media(max-width: 1700px) {
+  .basketGroup {
+    left: calc(100% - 600px);
+  }
+
+  .titlePreviewWrapp {
+    margin-left: 275px;
+  }
+}
+
+@media(max-width: 1300px) {
+  .basketGroup {
+    left: calc(100% - 520px);
+  }
+
+  .titlePreviewWrapp {
+    margin-left: 105px;
+  }
+
+  .sphere {
+    right: calc(100% - 130px);
+  }
+
+  .waveGroup {
+    top: calc(100% - 10px);
+  }
+}
+
+@media(max-width: 1024px) {
+  .basketGroup {
+    bottom: calc(100% - 750px);
+    left: calc(100% - 280px);
+  }
+
+  .sphere {
+    left: calc(100% - 150px);
+  }
+}
+
+@media(max-width: 680px) {
+  .secPreview h1 {
+    font-size: 27px;
+  }
+
+  .secPreview {
+    margin-bottom: 60px;
+  }
+
+  .waveGroup {
+    top: calc(100% - 20px);
+    right: calc(100% - 150px);
+  }
+
+  .titlePreviewWrapp {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media(max-width: 480px) {
+  .titlePreviewWrapp {
+    margin-top: 300px;
+    margin-bottom: 50px;
+  }
+
+  .basketGroupAdaptive {
+    display: block;
+    position: absolute;
+    bottom: calc(100% - 0px);
+    left: calc(100% - 370px);
+  }
+
+  .elipse {
+    display: block;
+    position: absolute;
+    top: -270px;
+    right: calc(100% - 50px);
+  }
+
+  .basketGroup {
+    display: none;
+  }
+
+  .waveGroup {
+    display: none;
+  }
+
+  .sphere {
+    display: none;
+  }
+
+}

@@ -1,0 +1,48 @@
+.storeBlock {
+  width: 550px;
+  height: 450px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.storeBlock img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.storeBlock:hover .storeDesc {
+  opacity: 1;
+}
+
+.storeDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  left: 0;
+  top: 0;
+  background-color: #67AEFC;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+@media(max-width: 1200px) {
+  .storeBlock {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media(max-width: 980px) {
+  .storeBlock {
+    width: 335px;
+    height: 260px;
+  }
+}
